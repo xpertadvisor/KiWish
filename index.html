@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -79,6 +79,14 @@
         .text-shadow-sm {
             text-shadow: 0 1px 2px rgba(0,0,0,0.1);
         }
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     </style>
 </head>
 <body class="bg-cream text-stone-900 font-sans antialiased selection:bg-kiwi-300 selection:text-kiwi-900 overflow-x-hidden">
@@ -94,15 +102,16 @@
             </div>
             
             <div class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-600">
-                <a href="#benefits" class="hover:text-kiwi-600 transition-colors">Benefits</a>
-                <a href="#how-it-works" class="hover:text-kiwi-600 transition-colors">How it Works</a>
-                <a href="#ingredients" class="hover:text-kiwi-600 transition-colors">Ingredients</a>
-                <a href="#science" class="hover:text-kiwi-600 transition-colors">Science</a>
-                <a href="#faq" class="hover:text-kiwi-600 transition-colors">FAQ</a>
+                <a href="#benefits" class="hover:text-kiwi-600 transition-colors" data-i18n="nav.benefits">Benefits</a>
+                <a href="#how-it-works" class="hover:text-kiwi-600 transition-colors" data-i18n="nav.how_it_works">How it Works</a>
+                <a href="#ingredients" class="hover:text-kiwi-600 transition-colors" data-i18n="nav.ingredients">Ingredients</a>
+                <a href="#science" class="hover:text-kiwi-600 transition-colors" data-i18n="nav.science">Science</a>
+                <a href="#testimonials" class="hover:text-kiwi-600 transition-colors" data-i18n="nav.success_stories">Success Stories</a>
+                <a href="#faq" class="hover:text-kiwi-600 transition-colors" data-i18n="nav.faq">FAQ</a>
             </div>
 
             <div class="flex items-center gap-4">
-                <a href="https://wa.me/0167798138" target="_blank" class="bg-kiwi-900 text-cream text-sm font-medium px-6 py-2.5 rounded-full hover:bg-kiwi-700 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 shadow-md inline-flex items-center justify-center">
+                <a href="https://wa.me/0167798138" target="_blank" class="bg-kiwi-900 text-cream text-sm font-medium px-6 py-2.5 rounded-full hover:bg-kiwi-700 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 shadow-md inline-flex items-center justify-center" data-i18n="nav.order_now">
                     Order Now
                 </a>
             </div>
@@ -120,22 +129,22 @@
                 <div class="space-y-8 animate-fade-in-up">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-kiwi-100 text-kiwi-700 text-xs font-semibold uppercase tracking-wider border border-kiwi-200">
                         <span class="w-2 h-2 rounded-full bg-kiwi-500 animate-pulse"></span>
-                        New Zealand Formula
+                        <span data-i18n="hero.new_zealand_formula">New Zealand Formula</span>
                     </div>
                     <h1 class="font-serif text-5xl lg:text-6xl font-bold leading-tight text-kiwi-900">
-                        Stubborn Fat Reduction & <span class="text-transparent bg-clip-text bg-gradient-to-r from-kiwi-600 to-gold-500">Clean Burn</span> Formula
+                        <span data-i18n="hero.title_part1">Stubborn Fat Reduction &</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-kiwi-600 to-gold-500" data-i18n="hero.title_part2">Clean Burn</span> <span data-i18n="hero.title_part3">Formula</span>
                     </h1>
-                    <p class="text-lg text-stone-600 leading-relaxed max-w-xl">
+                    <p class="text-lg text-stone-600 leading-relaxed max-w-xl" data-i18n="hero.description">
                         A refreshing, plant-powered blend designed to gently cleanse your body, support digestion, reduce bloating, and revitalize your glow—without harsh ingredients.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <button class="px-8 py-4 bg-kiwi-600 text-white rounded-full font-medium shadow-lg shadow-kiwi-600/30 hover:bg-kiwi-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
-                            Start Your Journey
+                            <span data-i18n="hero.start_journey">Start Your Journey</span>
                             <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </button>
                         <button class="px-8 py-4 bg-white text-stone-700 border border-stone-200 rounded-full font-medium hover:bg-stone-50 hover:border-stone-300 transition-all duration-300 flex items-center justify-center gap-2">
                             <i data-lucide="play-circle" class="w-4 h-4 text-kiwi-600"></i>
-                            Watch Video
+                            <span data-i18n="hero.watch_video">Watch Video</span>
                         </button>
                     </div>
                     <div class="flex items-center gap-4 text-sm text-stone-500 pt-4">
@@ -144,13 +153,13 @@
                             <div class="w-8 h-8 rounded-full bg-stone-200 border-2 border-white flex items-center justify-center text-xs">🥝</div>
                             <div class="w-8 h-8 rounded-full bg-stone-200 border-2 border-white flex items-center justify-center text-xs">✨</div>
                         </div>
-                        <p>Trusted by 10,000+ happy customers</p>
+                        <p data-i18n="hero.trusted_customers">Trusted by 10,000+ happy customers</p>
                     </div>
                 </div>
                 <div class="relative lg:h-[600px] flex items-center justify-center animate-fade-in delay-200">
                     <div class="relative z-10 w-full max-w-md animate-float">
                         <div class="absolute inset-0 bg-gradient-to-tr from-kiwi-500/20 to-gold-500/20 rounded-[2rem] blur-xl transform rotate-6 scale-95"></div>
-                        <img src="Assets/ProductImage.jpeg" alt="KiWish Product Box and Kiwis" class="relative rounded-[2rem] shadow-2xl border-4 border-white/50 w-full object-cover">
+                        <img src="Assets/Products/ProductImage.jpeg" alt="KiWish Product Box and Kiwis" data-i18n="hero.image_alt" class="relative rounded-[2rem] shadow-2xl border-4 border-white/50 w-full object-cover">
                         
                         <!-- Floating Badge -->
                         <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-2xl shadow-xl border border-stone-100 flex items-center gap-3 animate-bounce" style="animation-duration: 3s;">
@@ -158,8 +167,8 @@
                                 <i data-lucide="check-circle" class="w-6 h-6 text-kiwi-600"></i>
                             </div>
                             <div>
-                                <p class="text-xs text-stone-500 font-medium uppercase">Clinically Proven</p>
-                                <p class="text-sm font-bold text-kiwi-900">EFSA Approved</p>
+                                <p class="text-xs text-stone-500 font-medium uppercase" data-i18n="hero.clinically_proven">Clinically Proven</p>
+                                <p class="text-sm font-bold text-kiwi-900" data-i18n="hero.efsa_approved">EFSA Approved</p>
                             </div>
                         </div>
                     </div>
@@ -172,12 +181,12 @@
     <section class="py-20 bg-stone-900 text-cream relative overflow-hidden">
         <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4">See KiWish in Action</h2>
-            <p class="text-stone-300 mb-10 max-w-2xl mx-auto">Discover how our natural formula works to cleanse, boost, and revitalize your body from within.</p>
+            <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4" data-i18n="video_section.title">See KiWish in Action</h2>
+            <p class="text-stone-300 mb-10 max-w-2xl mx-auto" data-i18n="video_section.description">Discover how our natural formula works to cleanse, boost, and revitalize your body from within.</p>
 
             <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-stone-700 bg-black aspect-[9/16] max-w-4xl mx-auto group">
             <!-- <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-stone-700 bg-black aspect-video max-w-4xl mx-auto group"> -->
-                <video src="Assets/ProductVideo2.mp4" controls class="w-full h-full object-cover" poster="Assets/ProductImage.jpeg"></video>
+                <video src="Assets/VideoClips/ProductVideo2.mp4" controls class="w-full h-full object-cover" poster="Assets/ProductImage.jpeg"></video>
                 <div class="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:opacity-0 transition-opacity duration-300 bg-black/30">
                     <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/40">
                         <i data-lucide="play" class="w-8 h-8 text-white fill-current ml-1"></i>
@@ -191,9 +200,9 @@
     <section id="benefits" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-kiwi-600 font-semibold tracking-wide uppercase text-sm mb-2">Why KiWish?</h2>
-                <h2 class="font-serif text-4xl font-bold text-stone-900 mb-6">Holistic Wellness in Every Sip</h2>
-                <p class="text-stone-600 text-lg">More than just a detox. It's a comprehensive approach to a healthier, lighter you.</p>
+                <h2 class="text-kiwi-600 font-semibold tracking-wide uppercase text-sm mb-2" data-i18n="benefits.subtitle">Why KiWish?</h2>
+                <h2 class="font-serif text-4xl font-bold text-stone-900 mb-6" data-i18n="benefits.title">Holistic Wellness in Every Sip</h2>
+                <p class="text-stone-600 text-lg" data-i18n="benefits.description">More than just a detox. It's a comprehensive approach to a healthier, lighter you.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -202,8 +211,8 @@
                     <div class="w-12 h-12 bg-kiwi-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="sparkles" class="w-6 h-6 text-kiwi-600"></i>
                     </div>
-                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Detoxification</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">Gentle gut and liver cleansing that helps remove accumulated toxins effectively.</p>
+                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-3" data-i18n="benefits.detoxification.title">Detoxification</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed" data-i18n="benefits.detoxification.desc">Gentle gut and liver cleansing that helps remove accumulated toxins effectively.</p>
                 </div>
 
                 <!-- Benefit 2 -->
@@ -211,8 +220,8 @@
                     <div class="w-12 h-12 bg-kiwi-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="flame" class="w-6 h-6 text-kiwi-600"></i>
                     </div>
-                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Metabolism Boost</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">Enhance your metabolic rate to burn fat naturally, even while you're at rest.</p>
+                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-3" data-i18n="benefits.metabolism.title">Metabolism Boost</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed" data-i18n="benefits.metabolism.desc">Enhance your metabolic rate to burn fat naturally, even while you're at rest.</p>
                 </div>
 
                 <!-- Benefit 3 -->
@@ -220,8 +229,8 @@
                     <div class="w-12 h-12 bg-kiwi-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="smile" class="w-6 h-6 text-kiwi-600"></i>
                     </div>
-                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Better Digestion</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">Say goodbye to bloating and enjoy a lighter, more comfortable gut feeling.</p>
+                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-3" data-i18n="benefits.digestion.title">Better Digestion</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed" data-i18n="benefits.digestion.desc">Say goodbye to bloating and enjoy a lighter, more comfortable gut feeling.</p>
                 </div>
 
                 <!-- Benefit 4 -->
@@ -229,8 +238,8 @@
                     <div class="w-12 h-12 bg-kiwi-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="scale" class="w-6 h-6 text-kiwi-600"></i>
                     </div>
-                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Weight Control</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">Prevents fat storage and converts existing fat into usable energy.</p>
+                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-3" data-i18n="benefits.weight_control.title">Weight Control</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed" data-i18n="benefits.weight_control.desc">Prevents fat storage and converts existing fat into usable energy.</p>
                 </div>
                 
                 <!-- Benefit 5 -->
@@ -238,8 +247,8 @@
                     <div class="w-12 h-12 bg-kiwi-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="heart-pulse" class="w-6 h-6 text-kiwi-600"></i>
                     </div>
-                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Heart Health</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">Helps lower cholesterol and maintain healthy blood lipid levels.</p>
+                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-3" data-i18n="benefits.heart_health.title">Heart Health</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed" data-i18n="benefits.heart_health.desc">Helps lower cholesterol and maintain healthy blood lipid levels.</p>
                 </div>
 
                 <!-- Benefit 6 -->
@@ -247,8 +256,8 @@
                     <div class="w-12 h-12 bg-kiwi-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="droplet" class="w-6 h-6 text-kiwi-600"></i>
                     </div>
-                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Blood Sugar</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">Supports the regulation of blood glucose levels for steady energy.</p>
+                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-3" data-i18n="benefits.blood_sugar.title">Blood Sugar</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed" data-i18n="benefits.blood_sugar.desc">Supports the regulation of blood glucose levels for steady energy.</p>
                 </div>
 
                 <!-- Benefit 7 -->
@@ -256,8 +265,8 @@
                     <div class="w-12 h-12 bg-kiwi-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="shield-check" class="w-6 h-6 text-kiwi-600"></i>
                     </div>
-                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Gut Flora</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">Increases friendly bacteria to support overall digestive wellness.</p>
+                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-3" data-i18n="benefits.gut_flora.title">Gut Flora</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed" data-i18n="benefits.gut_flora.desc">Increases friendly bacteria to support overall digestive wellness.</p>
                 </div>
 
                 <!-- Benefit 8 -->
@@ -265,8 +274,8 @@
                     <div class="w-12 h-12 bg-kiwi-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="zap" class="w-6 h-6 text-kiwi-600"></i>
                     </div>
-                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Absorption</h3>
-                    <p class="text-stone-600 text-sm leading-relaxed">Enhanced bioavailability ensures your body gets the nutrients it needs.</p>
+                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-3" data-i18n="benefits.absorption.title">Absorption</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed" data-i18n="benefits.absorption.desc">Enhanced bioavailability ensures your body gets the nutrients it needs.</p>
                 </div>
             </div>
         </div>
@@ -282,8 +291,8 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16">
-                <h2 class="font-serif text-4xl font-bold text-white mb-6">Simple 3-Step Process</h2>
-                <p class="text-kiwi-100 max-w-2xl mx-auto">Transform your body naturally with our scientifically designed flow.</p>
+                <h2 class="font-serif text-4xl font-bold text-white mb-6" data-i18n="how_it_works.title">Simple 3-Step Process</h2>
+                <p class="text-kiwi-100 max-w-2xl mx-auto" data-i18n="how_it_works.subtitle">Transform your body naturally with our scientifically designed flow.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8 relative">
@@ -295,8 +304,8 @@
                     <div class="w-24 h-24 rounded-full bg-stone-800 border-4 border-kiwi-500 flex items-center justify-center mb-6 shadow-lg shadow-kiwi-500/20 group-hover:scale-110 transition-transform duration-300">
                         <span class="font-serif text-3xl font-bold text-white">1</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Cleanse</h3>
-                    <p class="text-kiwi-100 text-sm leading-relaxed px-4">
+                    <h3 class="text-xl font-bold text-white mb-3" data-i18n="how_it_works.step1.title">Cleanse</h3>
+                    <p class="text-kiwi-100 text-sm leading-relaxed px-4" data-i18n="how_it_works.step1.desc">
                         Gently detoxes your gut and liver, clearing out toxins & waste to reset your body.
                     </p>
                 </div>
@@ -306,8 +315,8 @@
                     <div class="w-24 h-24 rounded-full bg-stone-800 border-4 border-gold-500 flex items-center justify-center mb-6 shadow-lg shadow-gold-500/20 group-hover:scale-110 transition-transform duration-300">
                         <span class="font-serif text-3xl font-bold text-white">2</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Boost & Burn</h3>
-                    <p class="text-kiwi-100 text-sm leading-relaxed px-4">
+                    <h3 class="text-xl font-bold text-white mb-3" data-i18n="how_it_works.step2.title">Boost & Burn</h3>
+                    <p class="text-kiwi-100 text-sm leading-relaxed px-4" data-i18n="how_it_works.step2.desc">
                         Prevents fat storage & converts existing fat into energy, melting stubborn fat naturally.
                     </p>
                 </div>
@@ -317,8 +326,8 @@
                     <div class="w-24 h-24 rounded-full bg-stone-800 border-4 border-kiwi-500 flex items-center justify-center mb-6 shadow-lg shadow-kiwi-500/20 group-hover:scale-110 transition-transform duration-300">
                         <span class="font-serif text-3xl font-bold text-white">3</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Slim Tummy</h3>
-                    <p class="text-kiwi-100 text-sm leading-relaxed px-4">
+                    <h3 class="text-xl font-bold text-white mb-3" data-i18n="how_it_works.step3.title">Slim Tummy</h3>
+                    <p class="text-kiwi-100 text-sm leading-relaxed px-4" data-i18n="how_it_works.step3.desc">
                         Improve digestion & bloating. Your gut feels lighter, and your waistline shows the difference.
                     </p>
                 </div>
@@ -330,108 +339,281 @@
     <section id="ingredients" class="py-24 bg-cream">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-kiwi-600 font-semibold tracking-wide uppercase text-sm mb-2">Nature's Best</h2>
-                <h2 class="font-serif text-4xl font-bold text-stone-900 mb-6">Premium Green Ingredients</h2>
+                <h2 class="text-kiwi-600 font-semibold tracking-wide uppercase text-sm mb-2" data-i18n="ingredients.subtitle">Nature's Best</h2>
+                <h2 class="font-serif text-4xl font-bold text-stone-900 mb-6" data-i18n="ingredients.title">Premium Green Ingredients</h2>
             </div>
 
             <!-- Main Greens -->
             <div class="grid md:grid-cols-5 gap-4 mb-20">
                 <div class="p-6 bg-white rounded-xl shadow-sm border border-stone-100 text-center hover:shadow-md transition-all">
-                    <div class="w-16 h-16 mx-auto bg-kiwi-100 rounded-full flex items-center justify-center mb-4 text-2xl">🥝</div>
-                    <h3 class="font-bold text-stone-900 mb-2">NZ Kiwifruit</h3>
-                    <p class="text-xs text-stone-500">Superior nutrition & consistent quality</p>
+                    <div class="w-16 h-16 mx-auto bg-kiwi-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="Assets/Ingredients/Ingredient01-Kiwifruit.png" alt="NZ Kiwifruit" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-stone-900 mb-2" data-i18n="ingredients.kiwifruit.title">NZ Kiwifruit</h3>
+                    <p class="text-xs text-stone-500" data-i18n="ingredients.kiwifruit.desc">Superior nutrition & consistent quality</p>
                 </div>
                 <div class="p-6 bg-white rounded-xl shadow-sm border border-stone-100 text-center hover:shadow-md transition-all">
-                    <div class="w-16 h-16 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-4 text-2xl">🌿</div>
-                    <h3 class="font-bold text-stone-900 mb-2">Chlorophyll</h3>
-                    <p class="text-xs text-stone-500">Natural green pigment from plants</p>
+                    <div class="w-16 h-16 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="Assets/Ingredients/Ingredient04-Chlorophyll.png" alt="Chlorophyll" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-stone-900 mb-2" data-i18n="ingredients.chlorophyll.title">Chlorophyll</h3>
+                    <p class="text-xs text-stone-500" data-i18n="ingredients.chlorophyll.desc">Natural green pigment from plants</p>
                 </div>
                 <div class="p-6 bg-white rounded-xl shadow-sm border border-stone-100 text-center hover:shadow-md transition-all">
-                    <div class="w-16 h-16 mx-auto bg-green-50 rounded-full flex items-center justify-center mb-4 text-2xl">🍏</div>
-                    <h3 class="font-bold text-stone-900 mb-2">Green Apple</h3>
-                    <p class="text-xs text-stone-500">Rich in antioxidants and fiber</p>
+                    <div class="w-16 h-16 mx-auto bg-green-50 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="Assets/Ingredients/Ingredient02-Apple.png" alt="Green Apple" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-stone-900 mb-2" data-i18n="ingredients.green_apple.title">Green Apple</h3>
+                    <p class="text-xs text-stone-500" data-i18n="ingredients.green_apple.desc">Rich in antioxidants and fiber</p>
                 </div>
                 <div class="p-6 bg-white rounded-xl shadow-sm border border-stone-100 text-center hover:shadow-md transition-all">
-                    <div class="w-16 h-16 mx-auto bg-emerald-50 rounded-full flex items-center justify-center mb-4 text-2xl">🥒</div>
-                    <h3 class="font-bold text-stone-900 mb-2">Cucumber</h3>
-                    <p class="text-xs text-stone-500">Hydrating and low-calorie</p>
+                    <div class="w-16 h-16 mx-auto bg-emerald-50 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="Assets/Ingredients/Ingredient03-Cucumber.png" alt="Cucumber" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-stone-900 mb-2" data-i18n="ingredients.cucumber.title">Cucumber</h3>
+                    <p class="text-xs text-stone-500" data-i18n="ingredients.cucumber.desc">Hydrating and low-calorie</p>
                 </div>
                 <div class="p-6 bg-white rounded-xl shadow-sm border border-stone-100 text-center hover:shadow-md transition-all">
-                    <div class="w-16 h-16 mx-auto bg-lime-50 rounded-full flex items-center justify-center mb-4 text-2xl">🌾</div>
-                    <h3 class="font-bold text-stone-900 mb-2">Wheat Grass</h3>
-                    <p class="text-xs text-stone-500">Nutrient-dense superfood</p>
+                    <div class="w-16 h-16 mx-auto bg-lime-50 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                        <img src="Assets/Ingredients/Ingredient05-WheatGrass.png" alt="Wheat Grass" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-stone-900 mb-2" data-i18n="ingredients.wheat_grass.title">Wheat Grass</h3>
+                    <p class="text-xs text-stone-500" data-i18n="ingredients.wheat_grass.desc">Nutrient-dense superfood</p>
                 </div>
             </div>
 
             <!-- Patented Ingredients -->
             <div id="science" class="bg-white rounded-3xl p-8 lg:p-12 shadow-xl border border-stone-100">
-                <h3 class="font-serif text-3xl font-bold text-stone-900 mb-10 text-center">3 Patented Powerhouses</h3>
+                <h3 class="font-serif text-3xl font-bold text-stone-900 mb-10 text-center" data-i18n="ingredients.patented_title">3 Patented Powerhouses</h3>
                 
                 <div class="grid lg:grid-cols-3 gap-8">
                     <!-- Ingredient 1 -->
                     <div class="bg-stone-50 rounded-2xl p-6 border border-stone-100 relative overflow-hidden">
-                        <div class="absolute top-4 right-4 text-2xl opacity-50">🇧🇪</div>
+                        <div class="h-32 mb-6 flex items-center justify-center">
+                            <img src="Assets/Ingredients/Ingredient18-KiOnutrimeCs.png" alt="KiOnutrime-Cs" class="h-full object-contain drop-shadow-md">
+                        </div>
                         <h4 class="text-xl font-bold text-kiwi-700 mb-1">KiOnutrime-Cs®</h4>
-                        <p class="text-xs font-semibold text-gold-600 uppercase tracking-wider mb-4">Multi Enzyme Complex</p>
+                        <p class="text-xs font-semibold text-gold-600 uppercase tracking-wider mb-4" data-i18n="ingredients.kionutrime.subtitle">Multi Enzyme Complex</p>
                         <ul class="space-y-3 text-sm text-stone-600">
                             <li class="flex items-start gap-2">
                                 <i data-lucide="check" class="w-4 h-4 text-kiwi-500 mt-0.5"></i>
-                                <span>Binds 800x its weight in fat</span>
+                                <span data-i18n="ingredients.kionutrime.p1">Binds 800x its weight in fat</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <i data-lucide="check" class="w-4 h-4 text-kiwi-500 mt-0.5"></i>
-                                <span>EFSA approved health claims</span>
+                                <span data-i18n="ingredients.kionutrime.p2">EFSA approved health claims</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <i data-lucide="check" class="w-4 h-4 text-kiwi-500 mt-0.5"></i>
-                                <span>33% more efficient fat-binder</span>
+                                <span data-i18n="ingredients.kionutrime.p3">33% more efficient fat-binder</span>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Ingredient 2 -->
                     <div class="bg-stone-50 rounded-2xl p-6 border border-stone-100 relative overflow-hidden">
-                        <div class="absolute top-4 right-4 text-2xl opacity-50">🇮🇳</div>
+                        <div class="h-32 mb-6 flex items-center justify-center">
+                            <img src="Assets/Ingredients/Ingredient16-Sunfiber.png" alt="Sunfiber" class="h-full object-contain drop-shadow-md">
+                        </div>
                         <h4 class="text-xl font-bold text-kiwi-700 mb-1">Sunfiber®</h4>
-                        <p class="text-xs font-semibold text-gold-600 uppercase tracking-wider mb-4">Guar Bean Fiber</p>
+                        <p class="text-xs font-semibold text-gold-600 uppercase tracking-wider mb-4" data-i18n="ingredients.sunfiber.subtitle">Guar Bean Fiber</p>
                         <ul class="space-y-3 text-sm text-stone-600">
                             <li class="flex items-start gap-2">
                                 <i data-lucide="check" class="w-4 h-4 text-kiwi-500 mt-0.5"></i>
-                                <span>Lowers cholesterol & glucose</span>
+                                <span data-i18n="ingredients.sunfiber.p1">Lowers cholesterol & glucose</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <i data-lucide="check" class="w-4 h-4 text-kiwi-500 mt-0.5"></i>
-                                <span>Increases friendly gut bacteria</span>
+                                <span data-i18n="ingredients.sunfiber.p2">Increases friendly gut bacteria</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <i data-lucide="check" class="w-4 h-4 text-kiwi-500 mt-0.5"></i>
-                                <span>Relieves constipation naturally</span>
+                                <span data-i18n="ingredients.sunfiber.p3">Relieves constipation naturally</span>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Ingredient 3 -->
                     <div class="bg-stone-50 rounded-2xl p-6 border border-stone-100 relative overflow-hidden">
-                        <div class="absolute top-4 right-4 text-2xl opacity-50">🇺🇸</div>
+                        <div class="h-32 mb-6 flex items-center justify-center">
+                            <img src="Assets/Ingredients/Ingredient17-DigeZyme.png" alt="DigeZyme" class="h-full object-contain drop-shadow-md">
+                        </div>
                         <h4 class="text-xl font-bold text-kiwi-700 mb-1">DigeZyme®</h4>
-                        <p class="text-xs font-semibold text-gold-600 uppercase tracking-wider mb-4">Plant Chitosan</p>
+                        <p class="text-xs font-semibold text-gold-600 uppercase tracking-wider mb-4" data-i18n="ingredients.digezyme.subtitle">Plant Chitosan</p>
                         <ul class="space-y-3 text-sm text-stone-600">
                             <li class="flex items-start gap-2">
                                 <i data-lucide="check" class="w-4 h-4 text-kiwi-500 mt-0.5"></i>
-                                <span>Prevents weight & fat gain</span>
+                                <span data-i18n="ingredients.digezyme.p1">Prevents weight & fat gain</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <i data-lucide="check" class="w-4 h-4 text-kiwi-500 mt-0.5"></i>
-                                <span>Enhances nutrient absorption</span>
+                                <span data-i18n="ingredients.digezyme.p2">Enhances nutrient absorption</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <i data-lucide="check" class="w-4 h-4 text-kiwi-500 mt-0.5"></i>
-                                <span>Supports digestive disorders</span>
+                                <span data-i18n="ingredients.digezyme.p3">Supports digestive disorders</span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-kiwi-600 font-semibold tracking-wide uppercase text-sm mb-2" data-i18n="testimonials.subtitle">Real Results</h2>
+                <h2 class="font-serif text-4xl font-bold text-stone-900 mb-6" data-i18n="testimonials.title">Success Stories</h2>
+                <p class="text-stone-600 text-lg" data-i18n="testimonials.description">See the transformation and feedback from our happy community.</p>
+            </div>
+
+            <div class="relative group max-w-full">
+                <!-- Scroll Container -->
+                <div id="testimonials-scroll" class="flex items-start overflow-x-auto gap-6 pb-4 snap-x snap-mandatory scrollbar-hide scroll-smooth px-4 md:px-0">
+                    <!-- Testimonial 1 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial01.jpg" alt="KiWish Customer Testimonial 1" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial02.jpg" alt="KiWish Customer Testimonial 2" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial03.jpg" alt="KiWish Customer Testimonial 3" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 4 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial04.jpg" alt="KiWish Customer Testimonial 4" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 5 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial05.jpg" alt="KiWish Customer Testimonial 5" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 6 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial06.jpg" alt="KiWish Customer Testimonial 6" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 7 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial07.jpg" alt="KiWish Customer Testimonial 7" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 8 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial08.jpg" alt="KiWish Customer Testimonial 8" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 9 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial09.jpg" alt="KiWish Customer Testimonial 9" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 10 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial10.jpg" alt="KiWish Customer Testimonial 10" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 11 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial11.jpg" alt="KiWish Customer Testimonial 11" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 12 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial12.jpg" alt="KiWish Customer Testimonial 12" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 13 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial13.jpg" alt="KiWish Customer Testimonial 13" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 14 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial14.jpg" alt="KiWish Customer Testimonial 14" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 15 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial15.jpg" alt="KiWish Customer Testimonial 15" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 16 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial16.jpg" alt="KiWish Customer Testimonial 16" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 17 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial17.jpg" alt="KiWish Customer Testimonial 17" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 18 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial18.jpg" alt="KiWish Customer Testimonial 18" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 19 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial19.jpg" alt="KiWish Customer Testimonial 19" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 20 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial20.jpg" alt="KiWish Customer Testimonial 20" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 21 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial21.jpg" alt="KiWish Customer Testimonial 21" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 22 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial22.jpg" alt="KiWish Customer Testimonial 22" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 23 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial23.jpg" alt="KiWish Customer Testimonial 23" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 24 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial24.jpg" alt="KiWish Customer Testimonial 24" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 25 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial25.jpg" alt="KiWish Customer Testimonial 25" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 26 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial26.jpg" alt="KiWish Customer Testimonial 26" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 27 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial27.jpg" alt="KiWish Customer Testimonial 27" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 28 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial28.jpg" alt="KiWish Customer Testimonial 28" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 29 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial29.jpg" alt="KiWish Customer Testimonial 29" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 30 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial30.jpg" alt="KiWish Customer Testimonial 30" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                    <!-- Testimonial 31 -->
+                    <div class="flex-none w-80 md:w-96 snap-center rounded-2xl overflow-hidden shadow-lg border border-stone-100 bg-white transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="Assets/Testimonials/Testimonial31.jpg" alt="KiWish Customer Testimonial 31" class="w-full h-80 md:h-96 object-cover object-top">
+                    </div>
+                </div>
+                
+                <!-- Navigation Buttons -->
+                <button onclick="document.getElementById('testimonials-scroll').scrollBy({left: -320, behavior: 'smooth'})" class="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 w-12 h-12 rounded-full bg-white shadow-lg border border-stone-100 flex items-center justify-center text-kiwi-600 hover:bg-kiwi-50 transition-all opacity-0 group-hover:opacity-100 hidden md:flex z-10 focus:outline-none focus:ring-2 focus:ring-kiwi-500 focus:ring-offset-2">
+                    <i data-lucide="chevron-left" class="w-6 h-6"></i>
+                </button>
+                <button onclick="document.getElementById('testimonials-scroll').scrollBy({left: 320, behavior: 'smooth'})" class="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 w-12 h-12 rounded-full bg-white shadow-lg border border-stone-100 flex items-center justify-center text-kiwi-600 hover:bg-kiwi-50 transition-all opacity-0 group-hover:opacity-100 hidden md:flex z-10 focus:outline-none focus:ring-2 focus:ring-kiwi-500 focus:ring-offset-2">
+                    <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                </button>
+            </div>
+<!--             
+            <div class="mt-12 text-center">
+                <a href="https://wa.me/0167798138" target="_blank" class="inline-flex items-center gap-2 text-kiwi-700 font-semibold hover:text-kiwi-600 transition-colors">
+                    See more reviews on WhatsApp
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+             -->
         </div>
     </section>
 
@@ -441,68 +623,66 @@
             <!-- Usage -->
             <div class="bg-white rounded-2xl p-8 shadow-sm mb-16 flex flex-col md:flex-row items-center gap-8">
                 <div class="flex-1">
-                    <h3 class="font-serif text-2xl font-bold text-stone-900 mb-4">Daily Ritual</h3>
+                    <h3 class="font-serif text-2xl font-bold text-stone-900 mb-4" data-i18n="faq.daily_ritual">Daily Ritual</h3>
                     <div class="space-y-4">
                         <div class="flex items-center gap-4">
                             <span class="w-8 h-8 rounded-full bg-kiwi-600 text-white flex items-center justify-center font-bold text-sm">1</span>
-                            <p class="text-stone-700">Take 1 sachet daily</p>
+                            <p class="text-stone-700" data-i18n="faq.step1">Take 1 sachet daily</p>
                         </div>
                         <div class="flex items-center gap-4">
                             <span class="w-8 h-8 rounded-full bg-kiwi-600 text-white flex items-center justify-center font-bold text-sm">2</span>
-                            <p class="text-stone-700">Mix with 150ml of water</p>
+                            <p class="text-stone-700" data-i18n="faq.step2">Mix with 150ml of water</p>
                         </div>
                         <div class="flex items-center gap-4">
                             <span class="w-8 h-8 rounded-full bg-kiwi-600 text-white flex items-center justify-center font-bold text-sm">3</span>
-                            <p class="text-stone-700">Enjoy after meals or before sleep</p>
+                            <p class="text-stone-700" data-i18n="faq.step3">Enjoy after meals or before sleep</p>
                         </div>
                     </div>
                     <div class="mt-6 bg-gold-50 p-4 rounded-lg border border-gold-200">
-                        <p class="text-sm text-gold-700 font-medium">💡 Tip: Mix with cold water or ice for a refreshing taste!</p>
+                        <p class="text-sm text-gold-700 font-medium" data-i18n="faq.tip">💡 Tip: Mix with cold water or ice for a refreshing taste!</p>
                     </div>
                 </div>
-                <div class="w-full md:w-1/3 aspect-square bg-kiwi-200 rounded-xl flex items-center justify-center text-kiwi-600 opacity-50">
-                    <i data-lucide="glass-water" class="w-20 h-20"></i>
-                </div>
+                <img src="Assets/Ingredients/DirectionToUse.jpeg" alt="Direction for Use" data-i18n="faq.image_alt" class="w-full md:w-1/3 rounded-xl shadow-lg">
             </div>
 
             <!-- FAQ -->
             <div class="text-center mb-10">
-                <h2 class="font-serif text-3xl font-bold text-stone-900">Common Questions</h2>
+                <h2 class="font-serif text-3xl font-bold text-stone-900" data-i18n="faq.common_questions">Common Questions</h2>
             </div>
             
             <div class="space-y-4">
                 <details class="group bg-white rounded-xl shadow-sm border border-stone-100 open:border-kiwi-200 transition-all">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6">
-                        <span>How long will it take to see results?</span>
+                        <span data-i18n="faq.q1.question">How long will it take to see results?</span>
                         <span class="transition group-open:rotate-180">
                             <i data-lucide="chevron-down" class="w-5 h-5 text-stone-400"></i>
                         </span>
                     </summary>
-                    <div class="text-stone-600 px-6 pb-6 text-sm leading-relaxed">
+                    <div class="text-stone-600 px-6 pb-6 text-sm leading-relaxed" data-i18n="faq.q1.answer">
                         Individual results may vary. Most users report feeling lighter and less bloated within the first week. For optimal weight management and metabolic benefits, consistent use for 2-4 weeks is recommended.
                     </div>
                 </details>
 
                 <details class="group bg-white rounded-xl shadow-sm border border-stone-100 open:border-kiwi-200 transition-all">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6">
-                        <span>Is KiWish suitable for vegetarians/vegans?</span>
+                        <span data-i18n="faq.q2.question">Is KiWish suitable for vegetarians/vegans?</span>
                         <span class="transition group-open:rotate-180">
                             <i data-lucide="chevron-down" class="w-5 h-5 text-stone-400"></i>
                         </span>
                     </summary>
-                    <div class="text-stone-600 px-6 pb-6 text-sm leading-relaxed">
+                    <div class="text-stone-600 px-6 pb-6 text-sm leading-relaxed" data-i18n="faq.q2.answer">
                         Yes! KiWish is plant-powered and contains non-animal source ingredients, making it suitable for vegetarian and vegan lifestyles.
                     </div>
                 </details>
 
                 <details class="group bg-white rounded-xl shadow-sm border border-stone-100 open:border-kiwi-200 transition-all">
                     <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6">
-                        <span>Are there any side effects?</span>
+                        <span data-i18n="faq.q3.question">Are there any side effects?</span>
                         <span class="transition group-open:rotate-180">
                             <i data-lucide="chevron-down" class="w-5 h-5 text-stone-400"></i>
                         </span>
                     </summary>
-                    <div class="text-stone-600 px-6 pb-6 text-sm leading-relaxed">
+                    <div class="text-stone-600 px-6 pb-6 text-sm leading-relaxed" data-i18n="faq.q3.answer">
                         KiWish is formulated with natural, hypoallergenic ingredients. However, as with any dietary supplement, some individuals may experience mild digestive changes initially as the body adjusts. This is normal and typically subsides within a few days.
                     </div>
                 </details>
@@ -516,12 +696,12 @@
         <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/leaf.png')]"></div>
         
         <div class="relative z-10 max-w-3xl mx-auto">
-            <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mb-6">Ready to Transform Your Health?</h2>
-            <p class="text-kiwi-100 text-lg mb-10">Join thousands of others who have discovered the natural power of KiWish.</p>
-            <a href="https://wa.me/0167798138" target="_blank" class="bg-gold-500 text-stone-900 font-bold text-lg px-10 py-4 rounded-full hover:bg-gold-400 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-gold-500/20 inline-flex items-center justify-center">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mb-6" data-i18n="cta.title">Ready to Transform Your Health?</h2>
+            <p class="text-kiwi-100 text-lg mb-10" data-i18n="cta.subtitle">Join thousands of others who have discovered the natural power of KiWish.</p>
+            <a href="https://wa.me/0167798138" target="_blank" class="bg-gold-500 text-stone-900 font-bold text-lg px-10 py-4 rounded-full hover:bg-gold-400 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-gold-500/20 inline-flex items-center justify-center" data-i18n="cta.button">
                 Order Now - Start Your Detox
             </a>
-            <p class="mt-6 text-sm text-stone-400">30-Day Money Back Guarantee • Free Shipping on Bundles</p>
+            <p class="mt-6 text-sm text-stone-400" data-i18n="cta.shipping"> • Free Shipping on Bundles</p>
         </div>
     </section>
 
@@ -535,18 +715,20 @@
                     </div>
                     <span class="font-serif text-xl font-bold text-stone-200">KiWish</span>
                 </div>
-                <div class="text-sm">
-                    &copy; 2024 KiWish. All rights reserved.
+                <div class="text-sm" data-i18n="footer.rights">
+                    &copy; 2026 KiWish. All rights reserved.
                 </div>
                 <div class="flex gap-6 text-sm">
-                    <a href="#" class="hover:text-kiwi-500 transition-colors">Privacy Policy</a>
-                    <a href="#" class="hover:text-kiwi-500 transition-colors">Terms of Service</a>
-                    <a href="#" class="hover:text-kiwi-500 transition-colors">Contact</a>
+                    <a href="#" class="hover:text-kiwi-500 transition-colors" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a href="#" class="hover:text-kiwi-500 transition-colors" data-i18n="footer.terms">Terms of Service</a>
+                    <a href="#" class="hover:text-kiwi-500 transition-colors" data-i18n="footer.contact">Contact</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
