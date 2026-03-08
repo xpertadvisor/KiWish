@@ -1,19 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const supportedLanguages = ['en', 'th', 'zh', 'ms'];
+    const supportedLanguages = ['en', 'th', 'zh'];
     const defaultLanguage = 'en';
     const languageNames = {
         en: 'English',
         th: 'ไทย',
-        zh: '简体中文',
-        ms: 'Bahasa Melayu'
+        zh: '简体中文'
     };
 
     // WhatsApp numbers for each language
     const whatsappNumbers = {
-        en: '0167798138',
-        th: '94780500', // Update with Thai number
-        zh: '0167798138', // Update with Chinese number
-        ms: '94780500'  // Update with Malay number
+        en: '0105389981',
+        th: '0985591088', // Update with Thai number
+        zh: '0105389981', // Update with Chinese number
+        ms: '0105389981'  // Update with Malay number
     };
 
     // 1. Determine current language
