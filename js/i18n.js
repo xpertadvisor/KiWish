@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // WhatsApp numbers for each language
     const whatsappNumbers = {
-        en: '0105389981',
-        th: '0985591088', // Update with Thai number
-        zh: '0105389981', // Update with Chinese number
-        ms: '0105389981'  // Update with Malay number
+        en: '60105389981',
+        th: '660985591088', // Update with Thai number
+        zh: '60105389981', // Update with Chinese number
+        ms: '60105389981'  // Update with Malay number
     };
 
     // 1. Determine current language
