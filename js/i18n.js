@@ -7,6 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
         zh: '简体中文'
     };
 
+    // Video URLs for each language
+    const videoUrls = {
+        en: 'Assets/VideoClips/KiWish-Website-English-NoWatermark.mp4',
+        th: 'Assets/VideoClips/KiWish_Website_Thai_NoWatermark.mp4',
+        zh: 'Assets/VideoClips/KiWish Website Chinese_720p-NoWatermark.mp4'
+    };
+
     // WhatsApp numbers for each language
     const whatsappNumbers = {
         en: '60105389981',
@@ -73,6 +80,19 @@ document.addEventListener('DOMContentLoaded', () => {
             // Preserve any existing query parameters if needed, but for now simple replacement
             link.href = `https://wa.me/${waNumber}`;
         });
+
+        // Update video sources based on language
+        const videoSrc = videoUrls[lang] || videoUrls['en'];
+        const showcaseVideo = document.getElementById('showcase-video');
+        const modalVideo = document.getElementById('modal-video');
+        if (showcaseVideo) {
+            showcaseVideo.src = videoSrc;
+            showcaseVideo.load();
+        }
+        if (modalVideo) {
+            modalVideo.src = videoSrc;
+            modalVideo.load();
+        }
 
         // Save preference
         localStorage.setItem('kiwish_language', lang);
