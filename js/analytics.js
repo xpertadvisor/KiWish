@@ -43,8 +43,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 'button_text': link.textContent.trim() || 'Order Now'
             });
 
-            // Meta Pixel: Lead — WhatsApp click = highest-intent action on this site
+            // Meta Pixel: the WhatsApp link IS the "Order Now" CTA on this site,
+            // so it carries both the checkout-intent and the lead signal.
             if (typeof fbq !== 'undefined') {
+                // InitiateCheckout — clicking through to WhatsApp signals purchase intent
+                fbq('track', 'InitiateCheckout', {
+                    content_name: 'KiWish Detox',
+                    content_ids: ['kiwish-detox-001'],
+                    content_type: 'product',
+                    currency: 'MYR',
+                    value: 89.00,
+                    num_items: 1
+                });
+                console.log('Meta Pixel: InitiateCheckout tracked (WhatsApp order click)');
+
+                // Lead — WhatsApp click = highest-intent action on this site
                 fbq('track', 'Lead', {
                     content_name: 'KiWish Detox',
                     content_category: 'WhatsApp Order',
@@ -148,19 +161,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     'language': currentLang
                 });
 
-                // Meta Pixel: InitiateCheckout — "Order Now" click signals purchase intent
-                if (typeof fbq !== 'undefined') {
-                    fbq('track', 'InitiateCheckout', {
-                        content_name: 'KiWish Detox',
-                        content_ids: ['kiwish-detox-001'],
-                        content_type: 'product',
-                        currency: 'MYR',
-                        value: 89.00,
-                        num_items: 1
-                    });
-                    console.log('Meta Pixel: InitiateCheckout tracked (Order Now button)');
-                }
-
+                // Note: Meta Pixel InitiateCheckout fires on the WhatsApp link click
+                // (the actual Order Now CTA on this site), handled above.
                 console.log('Analytics: Order Now button click tracked');
             }
         });
