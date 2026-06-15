@@ -1,4 +1,5 @@
 // Google Analytics Event Tracking for KiWish Website
+// Meta Pixel events fire in parallel with all GA4 events
 
 document.addEventListener('DOMContentLoaded', () => {
     
@@ -11,11 +12,24 @@ document.addEventListener('DOMContentLoaded', () => {
         'language': currentLang
     });
 
+    // Meta Pixel: ViewContent — visitor has seen the KiWish product page
+    if (typeof fbq !== 'undefined') {
+        fbq('track', 'ViewContent', {
+            content_name: 'KiWish Detox',
+            content_category: 'Health & Wellness',
+            content_ids: ['kiwish-detox-001'],
+            content_type: 'product',
+            currency: 'MYR',
+            value: 89.00
+        });
+        console.log('Meta Pixel: ViewContent tracked');
+    }
+
     // Track WhatsApp order clicks
     const whatsappLinks = document.querySelectorAll('a[href^="https://wa.me/"]');
     whatsappLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            // Track as lead generation
+            // Track as lead generation (GA4)
             gtag('event', 'generate_lead', {
                 'event_category': 'engagement',
                 'event_label': 'whatsapp_order',
@@ -23,11 +37,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 'language': currentLang
             });
             
-            // Track specific WhatsApp order event
+            // Track specific WhatsApp order event (GA4)
             gtag('event', 'whatsapp_order', {
                 'language': currentLang,
                 'button_text': link.textContent.trim() || 'Order Now'
             });
+
+            // Meta Pixel: Lead — WhatsApp click = highest-intent action on this site
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead', {
+                    content_name: 'KiWish Detox',
+                    content_category: 'WhatsApp Order',
+                    currency: 'MYR',
+                    value: 89.00
+                });
+                console.log('Meta Pixel: Lead tracked (WhatsApp order click)');
+            }
             
             console.log('Analytics: WhatsApp order click tracked for language:', currentLang);
         });
@@ -41,6 +66,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 'video_title': video.src.split('/').pop() || 'product_video',
                 'language': currentLang
             });
+
+            // Meta Pixel: ViewContent with video context
+            if (typeof fbq !== 'undefined') {
+                fbq('trackCustom', 'VideoPlay', {
+                    content_name: video.src.split('/').pop() || 'product_video',
+                    language: currentLang
+                });
+                console.log('Meta Pixel: VideoPlay tracked');
+            }
+
             console.log('Analytics: Video play tracked');
         });
         
@@ -50,6 +85,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 'video_title': video.src.split('/').pop() || 'product_video',
                 'language': currentLang
             });
+
+            // Meta Pixel: completed video = strong warm signal for retargeting
+            if (typeof fbq !== 'undefined') {
+                fbq('trackCustom', 'VideoComplete', {
+                    content_name: video.src.split('/').pop() || 'product_video',
+                    language: currentLang
+                });
+                console.log('Meta Pixel: VideoComplete tracked');
+            }
+
             console.log('Analytics: Video completion tracked');
         });
     });
@@ -102,6 +147,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     'value': 1,
                     'language': currentLang
                 });
+
+                // Meta Pixel: InitiateCheckout — "Order Now" click signals purchase intent
+                if (typeof fbq !== 'undefined') {
+                    fbq('track', 'InitiateCheckout', {
+                        content_name: 'KiWish Detox',
+                        content_ids: ['kiwish-detox-001'],
+                        content_type: 'product',
+                        currency: 'MYR',
+                        value: 89.00,
+                        num_items: 1
+                    });
+                    console.log('Meta Pixel: InitiateCheckout tracked (Order Now button)');
+                }
+
                 console.log('Analytics: Order Now button click tracked');
             }
         });
