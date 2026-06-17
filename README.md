@@ -1,27 +1,28 @@
-# KiWish - Stubborn Fat Reduction & Clean Burn Formula
+# KiWish - Plant-Powered Daily Wellness Formula
 
 ![KiWish Product](Assets/ProductImage.jpeg)
 
-**KiWish Detox** is a refreshing, plant-powered blend designed to gently cleanse your body from the inside out. Infused with antioxidant-rich fruits, natural fibers, and botanical extracts, this daily wellness tonic helps support digestion, reduce bloating, and revitalize your glow—all without harsh ingredients or artificial additives.
+**KiWish Detox** is a refreshing, plant-powered blend designed to gently support your body from the inside out. Infused with antioxidant-rich fruits, natural fibers, and botanical extracts, this daily wellness tonic helps support digestion, ease everyday bloating, and revitalize your glow—all without harsh ingredients or artificial additives.
 
 ## 🌿 Key Benefits
 
-- **Detoxification**: Gentle gut and liver cleansing, toxin removal
-- **Metabolism**: Boost metabolism and burn fat even at rest
-- **Digestion**: Improved digestion, reduced bloating, lighter gut feeling
-- **Weight Management**: Prevents fat storage, converts existing fat to energy
-- **Cholesterol**: Lowers cholesterol and maintains healthy blood lipid levels
-- **Blood Sugar**: Regulates blood glucose levels
-- **Gut Health**: Increases friendly bacteria, supports digestive disorders
+- **Wellness Support**: Gentle daily nourishment with antioxidant-rich botanicals
+- **Metabolism**: Made with ingredients traditionally used to support a balanced metabolism
+- **Digestion**: Improved digestion, eased everyday bloating, lighter gut feeling
+- **Healthy Living**: Supports a balanced lifestyle as part of a varied, healthy diet
+- **Wellbeing**: Contains Sunfiber®, with ingredients that support normal cholesterol and glucose levels already within a healthy range*
+- **Gut Health**: Supports a healthy balance of gut bacteria
 - **Nutrient Absorption**: Enhanced bioavailability and nutrient uptake
+
+*Reflects ingredient-level claims approved by EFSA for the specific patented ingredient, not a guarantee of effect from the finished product.
 
 ## 🍃 How KiWish Works - Three-Step Process
 
-1. **Cleanse** - When body system is overloaded, fat burning slows down. KiWish gently detoxes your gut and liver, clearing out toxins & waste to reset your body.
+1. **Nourish** - KiWish brings together antioxidant-rich fruits and botanical fibers in one daily blend, gently supporting your body's everyday wellness routine.
 
-2. **Boost Metabolism & Burn Fat** - Prevent fat storage & converts existing fat into energy, allowing body to melt stubborn fat naturally without needing intense workouts.
+2. **Support Metabolism** - Made with ingredients traditionally associated with a balanced metabolism, as part of a healthy diet and active lifestyle.
 
-3. **Slim Tummy** - Improve digestion & bloating. Your gut feels lighter, waistline starts to show the difference.
+3. **Ease Bloating** - Improve digestion & ease everyday bloating. Your gut feels lighter, helping you feel more comfortable day to day.
 
 ## 🥝 Key Ingredients
 
@@ -35,20 +36,20 @@
 
 ### Patented Ingredients
 
-| Ingredient | Origin | Key Benefits |
+| Ingredient | Origin | Key Benefits (ingredient-level) |
 |------------|--------|--------------|
-| **KiOnutrime-Cs®** Multi Enzyme Complex | Belgium | • Breaking down food efficiently<br>• Better digestion helps body clear toxins more effectively<br>• Bind at least 800 times its own weight in fat<br>• EFSA approved health claims |
-| **Sunfiber®** Guar Bean Fiber | India | • Lower cholesterol and glucose level<br>• Increase the friendly bacteria in gut<br>• Relieves constipation |
-| **DigeZyme®** Plant Chitosan | USA | • Helps lower fat storage in the body<br>• Prevent weight and fat gain<br>• Enhanced nutrient absorption |
+| **KiOnutrime-Cs®** Multi Enzyme Complex | Belgium | • Supports efficient food breakdown<br>• Supports normal digestion<br>• Demonstrated fat-binding capacity in lab studies<br>• EFSA-approved health claim for this specific ingredient |
+| **Sunfiber®** Guar Bean Fiber | India | • Ingredient with EFSA-recognised role in supporting normal cholesterol and glucose levels<br>• Supports a healthy balance of gut bacteria<br>• Traditionally used to ease constipation |
+| **DigeZyme®** Plant Chitosan | USA | • Studied for its role in supporting healthy fat metabolism<br>• Enhanced nutrient absorption |
 
 ## 🧬 Science Behind the Ingredients
 
-### KiOnutrime-Cs® (Belgium) - The Fat-Binder
+### KiOnutrime-Cs® (Belgium)
 
-Patented weight and cholesterol management ingredient with positive health claim issued by EFSA related to chitosan and maintenance of normal blood LDL-cholesterol.
+A patented ingredient studied for its role in weight and cholesterol management, with a positive health claim issued by EFSA specifically for chitosan and the maintenance of normal blood LDL-cholesterol levels.
 
-- Binds at least 800 times its own weight in fat
-- 33% more efficient than other fat-binders
+- Demonstrated fat-binding capacity of at least 800 times its own weight in lab studies
+- Studied to be 33% more efficient than other comparable ingredients in lab conditions
 
 ### Sunfiber® (India) - Guar Bean Fiber
 
@@ -105,7 +106,7 @@ The KiWish website is built with HTML, CSS, and JavaScript:
 
 ### How long will it take to see results?
 
-Individual results may vary. Most users report feeling lighter and less bloated within the first week. For optimal weight management and metabolic benefits, consistent use for 2-4 weeks is recommended.
+Individual experiences may vary, and KiWish is not intended to produce guaranteed results. Some users report feeling lighter and less bloated within the first week of consistent use as part of a balanced diet.
 
 ### Can I take KiWish if I'm on medication?
 
@@ -122,7 +123,7 @@ KiWish is formulated with natural, hypoallergenic ingredients. However, as with 
 ## 🏆 Quality Assurance
 
 - ✓ Patented ingredients from Belgium, USA, and India
-- ✓ EFSA health claims approved
+- ✓ EFSA-approved health claim for a specific patented ingredient (Sunfiber®)
 - ✓ Human clinical trial tested
 - ✓ Non-animal source
 - ✓ Hypoallergenic and non-irritating
@@ -136,4 +137,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-*Note: This product is a dietary supplement containing patented ingredients designed to support weight management, digestive health, and overall wellness through natural, plant-based nutrition.*
+*Note: This product is a dietary supplement containing patented ingredients and is intended to support digestive health and overall wellness as part of a varied, balanced diet and healthy lifestyle. It is not intended to diagnose, treat, cure, or prevent any disease.*
