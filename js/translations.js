@@ -138,7 +138,7 @@ const translations = {
             common_questions: "Common Questions",
             q1: {
                 question: "How long will it take to see results?",
-                answer: "Individual results may vary. Most users report feeling lighter and less bloated within the first week. For optimal weight management and metabolic benefits, consistent use for 2-4 weeks is recommended."
+                answer: "Individual experiences may vary, and KiWish is not intended to produce guaranteed results. Some users report feeling lighter and less bloated within the first week of consistent use as part of a balanced diet."
             },
             q2: {
                 question: "Is KiWish suitable for vegetarians/vegans?",
@@ -301,7 +301,7 @@ const translations = {
             common_questions: "คำถามทั่วไป",
             q1: {
                 question: "นานแค่ไหนถึงจะเห็นผล?",
-                answer: "ผลลัพธ์อาจแตกต่างกันไปในแต่ละบุคคล ผู้ใช้ส่วนใหญ่รายงานว่ารู้สึกตัวเบาและท้องอืดน้อยลงภายในสัปดาห์แรก เพื่อการควบคุมน้ำหนักและประโยชน์ในการเผาผลาญที่ดีที่สุด แนะนำให้ใช้อย่างต่อเนื่อง 2-4 สัปดาห์"
+                answer: "ผลลัพธ์อาจแตกต่างกันไปในแต่ละบุคคล KiWish ไม่ได้มีไว้เพื่อรับประกันผลลัพธ์ที่แน่นอน ผู้ใช้บางรายรายงานว่ารู้สึกตัวเบาและท้องอืดน้อยลงภายในสัปดาห์แรกของการใช้อย่างต่อเนื่อง ควบคู่กับการรับประทานอาหารที่สมดุล"
             },
             q2: {
                 question: "KiWish เหมาะสำหรับมังสวิรัติ/วีแกนหรือไม่?",
@@ -464,7 +464,7 @@ const translations = {
             common_questions: "常见问题",
             q1: {
                 question: "多久能看到效果？",
-                answer: "效果因人而异。大多数用户在第一周内会感觉身体变轻，腹胀减少。为了获得最佳的体重管理和代谢益处，建议持续使用 2-4 周。"
+                answer: "效果因人而异，KiWish 并不保证特定效果。部分用户在持续使用第一周后，反馈感觉身体更轻盈、腹胀有所减少，建议作为均衡饮食的一部分持续使用。"
             },
             q2: {
                 question: "KiWish 适合素食者吗？",
@@ -627,7 +627,7 @@ const translations = {
             common_questions: "Soalan Lazim",
             q1: {
                 question: "Berapa lama untuk melihat hasil?",
-                answer: "Hasil individu mungkin berbeza. Kebanyakan pengguna melaporkan rasa lebih ringan dan kurang kembung dalam minggu pertama. Untuk pengurusan berat badan dan faedah metabolik yang optimum, penggunaan konsisten selama 2-4 minggu disyorkan."
+                answer: "Hasil individu mungkin berbeza, dan KiWish tidak bertujuan untuk menghasilkan keputusan yang dijamin. Sesetengah pengguna melaporkan rasa lebih ringan dan kurang kembung dalam minggu pertama penggunaan konsisten sebagai sebahagian daripada diet seimbang."
             },
             q2: {
                 question: "Adakah KiWish sesuai untuk vegetarian/vegan?",
