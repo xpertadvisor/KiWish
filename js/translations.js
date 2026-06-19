@@ -156,10 +156,14 @@ const translations = {
             shipping: "• Free Shipping on Bundles"
         },
         footer: {
-            rights: "© 2026 KiWish. All rights reserved.",
+            rights: "© 2026 KLCCHEALTHY SDN. BHD. (202101040297). All rights reserved.",
             privacy: "Privacy Policy",
-            terms: "Terms of Service",
-            contact: "Contact"
+            shipping: "Shipping Policy",
+            refund: "Refund Policy",
+            terms: "Terms & Conditions",
+            contact: "Contact",
+            company_label: "Company",
+            address_label: "Registered Address"
         }
     },
     th: {
@@ -319,10 +323,14 @@ const translations = {
             shipping: "• ส่งฟรีเมื่อสั่งเป็นชุด"
         },
         footer: {
-            rights: "© 2026 KiWish. สงวนลิขสิทธิ์",
+            rights: "© 2026 KLCCHEALTHY SDN. BHD. (202101040297) สงวนลิขสิทธิ์",
             privacy: "นโยบายความเป็นส่วนตัว",
-            terms: "เงื่อนไขการให้บริการ",
-            contact: "ติดต่อ"
+            shipping: "นโยบายการจัดส่ง",
+            refund: "นโยบายการคืนเงิน",
+            terms: "ข้อกำหนดและเงื่อนไข",
+            contact: "ติดต่อ",
+            company_label: "บริษัท",
+            address_label: "ที่อยู่จดทะเบียน"
         }
     },
     zh: {
@@ -482,10 +490,14 @@ const translations = {
             shipping: "• 套餐包邮"
         },
         footer: {
-            rights: "© 2026 KiWish. 版权所有。",
+            rights: "© 2026 KLCCHEALTHY SDN. BHD. (202101040297)。版权所有。",
             privacy: "隐私政策",
-            terms: "服务条款",
-            contact: "联系我们"
+            shipping: "运输政策",
+            refund: "退款政策",
+            terms: "条款与细则",
+            contact: "联系我们",
+            company_label: "公司",
+            address_label: "注册地址"
         }
     },
     ms: {
@@ -645,10 +657,14 @@ const translations = {
             shipping: "• Penghantaran Percuma untuk Pakej"
         },
         footer: {
-            rights: "© 2026 KiWish. Hak cipta terpelihara.",
+            rights: "© 2026 KLCCHEALTHY SDN. BHD. (202101040297). Hak cipta terpelihara.",
             privacy: "Dasar Privasi",
-            terms: "Terma Perkhidmatan",
-            contact: "Hubungi"
+            shipping: "Dasar Penghantaran",
+            refund: "Dasar Pemulangan",
+            terms: "Terma & Syarat",
+            contact: "Hubungi",
+            company_label: "Syarikat",
+            address_label: "Alamat Berdaftar"
         }
     }
 };

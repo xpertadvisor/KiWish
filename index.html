@@ -755,24 +755,55 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-stone-900 text-stone-400 py-12 border-t border-stone-800">
+    <footer class="bg-stone-900 text-stone-400 pt-14 pb-8 border-t border-stone-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="flex items-center gap-2">
-                    <div class="w-8 h-8 flex items-center justify-center bg-kiwi-900 rounded-full border border-kiwi-700">
-                        <i data-lucide="leaf" class="w-4 h-4 text-kiwi-500 fill-current"></i>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 pb-10 border-b border-stone-800">
+
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 flex items-center justify-center bg-kiwi-900 rounded-full border border-kiwi-700">
+                            <i data-lucide="leaf" class="w-4 h-4 text-kiwi-500 fill-current"></i>
+                        </div>
+                        <span class="font-serif text-xl font-bold text-stone-200">KiWish</span>
                     </div>
-                    <span class="font-serif text-xl font-bold text-stone-200">KiWish</span>
+                    <p class="text-sm leading-relaxed" data-i18n="hero.description">
+                        A refreshing, plant-powered blend designed to gently support your body, aid digestion, ease everyday bloating, and revitalize your glow—without harsh ingredients.
+                    </p>
                 </div>
-                <div class="text-sm" data-i18n="footer.rights">
-                    &copy; 2026 KiWish. All rights reserved.
+
+                <div>
+                    <h3 class="text-xs font-semibold uppercase tracking-wider text-stone-500 mb-3" data-i18n="footer.company_label">Company</h3>
+                    <p class="text-sm text-stone-300">KLCCHEALTHY SDN. BHD.</p>
+                    <p class="text-sm">SSM No: 202101040297 (1440597-P)</p>
                 </div>
-                <div class="flex gap-6 text-sm">
-                    <a href="#" class="hover:text-kiwi-500 transition-colors" data-i18n="footer.privacy">Privacy Policy</a>
-                    <a href="#" class="hover:text-kiwi-500 transition-colors" data-i18n="footer.terms">Terms of Service</a>
-                    <a href="#" class="hover:text-kiwi-500 transition-colors" data-i18n="footer.contact">Contact</a>
+
+                <div>
+                    <h3 class="text-xs font-semibold uppercase tracking-wider text-stone-500 mb-3" data-i18n="footer.address_label">Registered Address</h3>
+                    <p class="text-sm leading-relaxed">NO.22, JALAN USAHAWAN 2,<br>KAWASAN PERINDUSTRIAN SETAPAK,<br>53200 KUALA LUMPUR, MALAYSIA</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xs font-semibold uppercase tracking-wider text-stone-500 mb-3" data-i18n="footer.contact">Contact</h3>
+                    <p class="text-sm"><a href="mailto:kiwish.store@gmail.com" class="hover:text-kiwi-500 transition-colors">kiwish.store@gmail.com</a></p>
+                    <p class="text-sm"><a href="tel:+60167798138" class="hover:text-kiwi-500 transition-colors">016-779 8138</a></p>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-6">
+                <div class="text-sm text-center md:text-left" data-i18n="footer.rights">
+                    &copy; 2026 KLCCHEALTHY SDN. BHD. (202101040297). All rights reserved.
+                </div>
+                <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+                    <a href="/privacy-policy/" class="hover:text-kiwi-500 transition-colors" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a href="/shipping-policy/" class="hover:text-kiwi-500 transition-colors" data-i18n="footer.shipping">Shipping Policy</a>
+                    <a href="/refund-policy/" class="hover:text-kiwi-500 transition-colors" data-i18n="footer.refund">Refund Policy</a>
+                    <a href="/terms-and-conditions/" class="hover:text-kiwi-500 transition-colors" data-i18n="footer.terms">Terms &amp; Conditions</a>
+                    <a href="mailto:kiwish.store@gmail.com" class="hover:text-kiwi-500 transition-colors" data-i18n="footer.contact">Contact</a>
                 </div>
             </div>
+
         </div>
     </footer>
 
