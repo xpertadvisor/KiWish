@@ -1,0 +1,83 @@
+/* Kiwish Store — Legal Document System
+   Shared stylesheet for Privacy Policy, Shipping Policy,
+   Refund & Return Policy, and Terms & Conditions. */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:opsz@8..60,wght@400;500;600&display=swap');
+
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f6f8f5;
+  --ink: #1b2420;
+  --ink-soft: #4a554c;
+  --green: #1f4d3d;
+  --green-dark: #123025;
+  --green-pale: #eaf1ec;
+  --line: #e1e7df;
+  --flag: #c75d3d;
+  --flag-bg: #fbece4;
+  --radius: 3px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  font-size: 17px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+a { color: var(--green); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 2px; }
+a:hover { text-decoration-color: var(--green); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+
+/* Header */
+.site-header { border-bottom: 1px solid var(--line); padding: 22px 0; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+.wordmark { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 0.04em; color: var(--ink); text-decoration: none; }
+.wordmark span { color: var(--green); }
+.legal-nav { display: flex; gap: 6px; flex-wrap: wrap; }
+.legal-nav a { font-family: 'Space Grotesk', sans-serif; font-size: 12.5px; letter-spacing: 0.03em; text-transform: uppercase; text-decoration: none; padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink-soft); }
+.legal-nav a:hover, .legal-nav a[aria-current="page"] { color: #fff; background: var(--green); border-color: var(--green); }
+
+/* Document */
+.doc-wrap { padding: 56px 0 80px; }
+.doc-eyebrow { font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green); margin-bottom: 10px; }
+h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 34px; line-height: 1.15; margin: 0 0 10px; color: var(--ink); }
+.doc-meta { color: var(--ink-soft); font-size: 14.5px; margin: 0 0 36px; font-family: 'Space Grotesk', sans-serif; }
+
+.callout { display: flex; gap: 10px; align-items: flex-start; background: var(--green-pale); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; font-family: 'Space Grotesk', sans-serif; font-size: 13.5px; color: var(--green-dark); margin-bottom: 44px; }
+
+.clause { display: flex; gap: 20px; padding: 26px 0; border-top: 1px solid var(--line); }
+.clause:first-of-type { border-top: none; }
+.clause-number { flex: none; width: 38px; height: 38px; border: 1.5px solid var(--green); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 14px; color: var(--green); }
+.clause-body { flex: 1; min-width: 0; }
+.clause-body h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 18.5px; margin: 2px 0 10px; color: var(--ink); }
+.clause-body p { margin: 0 0 12px; color: var(--ink); }
+.clause-body ul { margin: 0 0 12px; padding-left: 20px; }
+.clause-body li { margin-bottom: 6px; }
+.clause-body p:last-child, .clause-body ul:last-child { margin-bottom: 0; }
+
+.flagtext { background: var(--flag-bg); color: var(--flag); padding: 1px 6px; border-radius: var(--radius); font-weight: 600; font-style: normal; }
+
+/* Footer */
+.site-footer { background: var(--green-dark); color: #e7ede9; padding: 40px 0 28px; }
+.site-footer .wrap { display: grid; gap: 22px; }
+.footer-brand { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: 0.04em; color: #fff; font-size: 16px; }
+.footer-grid { display: flex; flex-wrap: wrap; gap: 32px; font-size: 14px; }
+.footer-col h3 { font-family: 'Space Grotesk', sans-serif; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #9db8aa; margin: 0 0 10px; }
+.footer-col p, .footer-col a { color: #d9e4dc; margin: 0 0 4px; text-decoration: none; }
+.footer-col a { text-decoration: underline; text-decoration-color: rgba(255,255,255,0.25); }
+.footer-links { display: flex; gap: 16px; flex-wrap: wrap; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.12); margin-top: 18px; padding-top: 16px; font-size: 12.5px; color: #9db8aa; font-family: 'Space Grotesk', sans-serif; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+@media (max-width: 640px) {
+  h1 { font-size: 27px; }
+  .clause { gap: 14px; }
+  .clause-number { width: 32px; height: 32px; font-size: 12.5px; }
+  .footer-bottom { flex-direction: column; }
+}
